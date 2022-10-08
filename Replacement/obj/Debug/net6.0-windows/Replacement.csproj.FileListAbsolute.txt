@@ -92,3 +92,5 @@ C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pag
 C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\SubjectPage.baml
 C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\ShedulePage.g.cs
 C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\ShedulePage.baml
+C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\TeacherPage.g.cs
+C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\TeacherPage.baml

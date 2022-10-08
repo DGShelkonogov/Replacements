@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\dana\source\repos\Replacements\Replacement\App.xaml
-9-242508799
+10-1796402150
 
-22-859037116
+2357363481
 2081208145095
-AdminWindow.xaml;HomeWindow.xaml;MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\GroupPage.xaml;Pages\ReplacementPage.xaml;Pages\ShedulePage.xaml;Pages\SubjectPage.xaml;Pages\UserPage.xaml;
+AdminWindow.xaml;HomeWindow.xaml;MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\GroupPage.xaml;Pages\ReplacementPage.xaml;Pages\ShedulePage.xaml;Pages\SubjectPage.xaml;Pages\TeacherPage.xaml;Pages\UserPage.xaml;
 
 True
 

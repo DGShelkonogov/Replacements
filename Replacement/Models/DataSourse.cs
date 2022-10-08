@@ -11,5 +11,7 @@ namespace Replacement.Models
     {
         public static ObservableCollection<Subject> Subjects { get; set; } = new ObservableCollection<Subject>();
         public static ObservableCollection<User> Users { get; set; } = new ObservableCollection<User>();
+
+        public static User ActiveUser { get; set; }
     }
 }

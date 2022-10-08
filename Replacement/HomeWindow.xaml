@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="HomeWindow" Height="450" Width="800">
     <Grid>
-        <Frame Source="Pages/GroupPage.xaml"/>
+        <Frame Source="Pages/TeacherPage.xaml"/>
     </Grid>
 </Window>
