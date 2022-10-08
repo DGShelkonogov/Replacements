@@ -3,46 +3,122 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:toolkit="http://schemas.xceed.com/wpf/xaml/toolkit"
       xmlns:local="clr-namespace:Replacement.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Background="White"
       Title="AuthorizationPage">
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
-        </Grid.RowDefinitions>
-        <TextBlock 
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Text="Авторизация"/>
-        <TextBlock 
-             Grid.Row="1"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Text="Логин"/>
-        <TextBox 
-            Grid.Row="2"
-            x:Name="txtLogin"
-            Margin="10"/>
-        <TextBlock 
-            Grid.Row="3"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-            Text="Пароль"/>
-        <PasswordBox
-            Grid.Row="4"
-            x:Name="txtPassword"
-            Margin="10"/>
-        <Button 
-            Grid.Row="5" 
-            Content="Войти"
-            Click="Button_Click_Log_In"
-            Margin="10"/>
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="#4F5B73">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition  Width="800"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="350"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="1"  >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Label 
+                        Content="Авторизация" 
+                        Foreground="White"
+                        FontSize="45" HorizontalAlignment="Center" 
+                        VerticalAlignment="Center" Margin="0" 
+                        FontFamily="Century Gothic"/>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="325"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label Grid.Column="0" 
+                           Foreground="#D96281" 
+                           Content="Логин:" FontSize="20" 
+                           HorizontalAlignment="Right" 
+                           VerticalAlignment="Bottom" 
+                           Height="35" FontFamily="Cascadia Mono"/>
+                    <TextBox 
+                        Grid.Column="1" 
+                        x:Name="txtLogin" 
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Bottom" 
+                        Height="35" FontSize="18" 
+                        TextWrapping="Wrap"
+                        Width="200"/>
+
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="325"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Label 
+                        Grid.Column="0" 
+                        Foreground="#D96281" 
+                        Content="Пароль:" 
+                        FontSize="20"  
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Center" 
+                        Height="35" 
+                        FontFamily="Cascadia Mono"/>
+                    <PasswordBox 
+                        x:Name="txtPassword" 
+                        HorizontalAlignment="Left" 
+                        Height="35" FontSize="18"
+                        Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Width="200"/>
+
+                </Grid>
+
+                <Grid Grid.Row="3">
+                    <Button 
+                        Click="Button_Click_Log_In" 
+                        Content="Войти" FontSize="20"
+                        HorizontalAlignment="Center" 
+                        Foreground="White" 
+                        VerticalAlignment="Center" 
+                        Height="40" Width="180"
+                        Background="#D96281" 
+                        FontFamily="Yu Gothic UI Semibold"/>
+                </Grid>
+            </Grid>
+        </Grid>
     </Grid>
 </Page>

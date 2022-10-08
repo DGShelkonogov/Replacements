@@ -23,6 +23,7 @@ namespace Replacement
         public MainWindow()
         {
             InitializeComponent();
+            DBConnection.getConnection();
         }
     }
 }

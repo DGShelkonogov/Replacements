@@ -8,20 +8,18 @@ namespace Replacement.Models
 {
     public enum DayOfWeek
     {
-        monday,
-        tuesday,
-        wednesday,
-        thursday,
-        friday,
-        saturday,
+        Monday,
+        Tuesday,
+        Wednesday,
+        Thursday,
+        Friday,
+        Saturday,
     }
 
     public class Schedule
     {
         public int Id { get; set; }
         public DayOfWeek DayOfWeek { get; set;}
-
         public virtual ICollection<Lession> Lessions { get; set; } = new List<Lession>();
-
     }
 }

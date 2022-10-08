@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qg9j+EO8vz2zXGN91HEM5u5ooS713uf2brNc8E2BMk/UZyk4gBHjR5eC9HJOzH72LPHScv7KjZYV/B09dkMvJQ==",
+  "dgSpecHash": "FPb0X3PcKilMYkMeHk1sIIOQ7u0vI3E+O2+fid5fK5Iz+o19fvmCU38z9Ug6NEmDtXPGXIKioEyQGP06AIPZXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dana\\source\\repos\\не мне\\Replacement\\Replacement\\Replacement.csproj",
+  "projectFilePath": "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",

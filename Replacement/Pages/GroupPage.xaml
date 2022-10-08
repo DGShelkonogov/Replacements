@@ -9,16 +9,80 @@
       Background="White"
       Title="GroupPage">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
-        <ListView
-            Grid.Row="3"
-            x:Name="listSchedules">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Width="200" DisplayMemberBinding="{Binding Path=DayOfWeek}">День недели</GridViewColumn>
-                </GridView>
-            </ListView.View>
-        </ListView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
 
+            <TextBox 
+                x:Name="txtSearch"/>
+            <Button 
+                Grid.Column="1" 
+                Content="Поиск" 
+                Margin="1" 
+                Click="Button_Click_Search"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition />
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <TextBlock 
+                    Text="Группы"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"/>
+
+                <TextBox 
+                    Grid.Row="1"
+                    x:Name="txtName"/>
+
+
+                <Button
+                    Grid.Row="3"
+                    Content="Добавить"
+                    Click="Button_Click_Add"/>
+
+                <Button
+                    Grid.Row="4"
+                    Content="Изменить"
+                    Click="Button_Click_Edit"/>
+
+                <Button
+                    Grid.Row="5"
+                    Content="Удалить"
+                    Click="Button_Click_Delete"/>
+
+            </Grid>
+
+            <DataGrid 
+                x:Name="dtg" 
+                Grid.Column="1"
+                SelectedItem="dtg_Selected" 
+                CanUserAddRows="False"
+                AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn 
+                                Header="наименование"
+                                Binding="{Binding Path=Name}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
     </Grid>
 </Page>

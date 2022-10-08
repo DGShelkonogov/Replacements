@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dana\source\repos\не мне\Replacement\Replacement\obj\Debug\net6.0-windows\
+C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\
 Replacement
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\dana\source\repos\не мне\Replacement\Replacement\App.xaml
-4-2099766640
+C:\Users\dana\source\repos\Replacements\Replacement\App.xaml
+9-242508799
 
-15-7481970
-2082147245339
-HomeWindow.xaml;MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\GroupPage.xaml;
+22-859037116
+2081208145095
+AdminWindow.xaml;HomeWindow.xaml;MainWindow.xaml;Pages\AuthorizationPage.xaml;Pages\GroupPage.xaml;Pages\ReplacementPage.xaml;Pages\ShedulePage.xaml;Pages\SubjectPage.xaml;Pages\UserPage.xaml;
 
 True
 

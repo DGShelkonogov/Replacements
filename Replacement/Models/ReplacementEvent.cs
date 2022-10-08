@@ -19,8 +19,9 @@ namespace Replacement.Models
         Moved
     }
 
-    public class Replacement
+    public class ReplacementEvent
     {
+        public int Id { get; set; }
         public User User { get; set; }
         public Subject Subject { get; set; }
 

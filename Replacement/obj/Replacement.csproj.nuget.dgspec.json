@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dana\\source\\repos\\не мне\\Replacement\\Replacement\\Replacement.csproj": {}
+    "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dana\\source\\repos\\не мне\\Replacement\\Replacement\\Replacement.csproj": {
+    "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dana\\source\\repos\\не мне\\Replacement\\Replacement\\Replacement.csproj",
+        "projectUniqueName": "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj",
         "projectName": "Replacement",
-        "projectPath": "C:\\Users\\dana\\source\\repos\\не мне\\Replacement\\Replacement\\Replacement.csproj",
+        "projectPath": "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj",
         "packagesPath": "C:\\Users\\dana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dana\\source\\repos\\не мне\\Replacement\\Replacement\\obj\\",
+        "outputPath": "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dana\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,7 +51,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -63,7 +64,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
