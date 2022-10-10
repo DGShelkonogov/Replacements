@@ -45,7 +45,20 @@ namespace Replacement.Pages
 
         private void Button_Click_Delete_Subject(object sender, RoutedEventArgs e)
         {
-           
+            try
+            {
+                var group = cmbGroups.SelectedItem as Group;
+                
+                var o = (sender as Button).Tag as Lession;
+                (group.Schedules.ToList()[listShedules.SelectedIndex]).Lessions.Remove(o);
+
+                _schedule = new(group.Schedules);
+                listShedules.ItemsSource = _schedule;
+            }
+            catch(Exception ex)
+            {
+
+            }
         }
 
         private void cmbGroups_SelectionChanged(object sender, SelectionChangedEventArgs e)

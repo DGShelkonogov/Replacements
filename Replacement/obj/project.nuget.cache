@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FPb0X3PcKilMYkMeHk1sIIOQ7u0vI3E+O2+fid5fK5Iz+o19fvmCU38z9Ug6NEmDtXPGXIKioEyQGP06AIPZXg==",
+  "dgSpecHash": "VUwtN1WEgLuRq1HFRGlQ9+0SBw/6xwBukcqow2qbab9bk0z9inldKbgP39WxvZm2oNaOqWF3uxB09nhoT2WUMQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dana\\.nuget\\packages\\enums.net\\4.0.0\\enums.net.4.0.0.nupkg.sha512",
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.7\\microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.7\\microsoft.entityframeworkcore.analyzers.6.0.7.nupkg.sha512",

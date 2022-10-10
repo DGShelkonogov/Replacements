@@ -94,3 +94,4 @@ C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pag
 C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\ShedulePage.baml
 C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\TeacherPage.g.cs
 C:\Users\dana\source\repos\Replacements\Replacement\obj\Debug\net6.0-windows\Pages\TeacherPage.baml
+C:\Users\dana\source\repos\Replacements\Replacement\bin\Debug\net6.0-windows\Enums.NET.dll

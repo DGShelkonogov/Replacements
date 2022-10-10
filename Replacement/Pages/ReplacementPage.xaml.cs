@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using EnumsNET;
+using Microsoft.EntityFrameworkCore;
 using Replacement.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.ComponentModel;
 using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
@@ -36,7 +38,21 @@ namespace Replacement.Pages
         public ReplacementPage()
         {
             InitializeComponent();
-            cmbReplacementType.ItemsSource = ReplacementTypes;
+
+            cmbReplacementType.DisplayMemberPath = "Description";
+            cmbReplacementType.SelectedValuePath = "Value";
+            cmbReplacementType.ItemsSource = Enum.GetValues(typeof(ReplacementType))
+                .Cast<Enum>()
+                .Select(value => new
+                {
+                    (Attribute.GetCustomAttribute(value.GetType().GetField(value.ToString()), 
+                    typeof(DescriptionAttribute)) as DescriptionAttribute).Description,
+                    value
+                })
+                .OrderBy(item => item.value)
+                .ToList();
+
+            string description = (ReplacementType.Canceled).AsString(EnumFormat.Description);
 
             _db = DBConnection.getConnection();
             _groups = new(_db.Groups
@@ -99,12 +115,13 @@ namespace Replacement.Pages
                 else
                     MessageBox.Show("Не корректный номер пары");
             }
+            dynamic selectedType = cmbReplacementType.SelectedItem;
 
             var ReplacementEvent = new ReplacementEvent()
             {
                 Group = _mainGroup,
                 DateTime = _mainDateTime,
-                ReplacementType = (ReplacementType)cmbReplacementType.SelectedItem,
+                ReplacementType = selectedType.value,
                 User = user,
                 Subject = subject,
                 UserChanges = userChanges,
@@ -121,13 +138,13 @@ namespace Replacement.Pages
 
         private void cmbReplacementType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedType = (ReplacementType)cmbReplacementType.SelectedItem;
+            dynamic selectedType = cmbReplacementType.SelectedItem;
 
             cmbSubject.SelectedItem = null;
             cmbUsers.SelectedItem = null;
             txtLessionNumberChange.Text = "";
 
-            switch (selectedType)
+            switch (selectedType.value)
             {
                 case ReplacementType.Canceled:
                     ViewReplacementTypeCanceled();
