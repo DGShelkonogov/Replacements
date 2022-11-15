@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VUwtN1WEgLuRq1HFRGlQ9+0SBw/6xwBukcqow2qbab9bk0z9inldKbgP39WxvZm2oNaOqWF3uxB09nhoT2WUMQ==",
+  "dgSpecHash": "w5cuUY+lAxBxuqLLdScwgDFlqOFsapy/nR5ToCED2u+rHm5sAThJVy6N1CRhlN01Ffeu3aAgI3vMXWC8eY4Tjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dana\\source\\repos\\Replacements\\Replacement\\Replacement.csproj",
+  "projectFilePath": "C:\\Users\\dana\\source\\repos\\не мне\\Replacements\\Replacement\\Replacement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dana\\.nuget\\packages\\enums.net\\4.0.0\\enums.net.4.0.0.nupkg.sha512",
     "C:\\Users\\dana\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.7\\microsoft.entityframeworkcore.6.0.7.nupkg.sha512",

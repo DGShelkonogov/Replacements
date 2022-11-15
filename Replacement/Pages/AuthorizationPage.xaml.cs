@@ -13,9 +13,7 @@ namespace Replacement.Pages
         public AuthorizationPage()
         {
             InitializeComponent();
-            _db = DBConnection.getConnection();
-
-           
+            _db = DBConnection.getConnection();           
         }
 
         private void Button_Click_Log_In(object sender, RoutedEventArgs e)
@@ -29,7 +27,8 @@ namespace Replacement.Pages
                 return;
             }
 
-            var user = _db.Users.FirstOrDefault(x => x.Password == txtPassword.Password && x.Login == txtLogin.Text);
+            var user = _db.Users
+                .FirstOrDefault(x => x.Password == txtPassword.Password && x.Login == txtLogin.Text);
             if(user != null)
             {
                 DataSourse.ActiveUser = user;

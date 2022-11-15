@@ -15,6 +15,7 @@ namespace Replacement
         public DbSet<Lession> Lessions { get; set; }
         public DbSet<Subject> Subjects { get; set; }
         public DbSet<ReplacementEvent> Replacements { get; set; }
+        public DbSet<Request> Requests { get; set; }
 
         public ApplicationContext()
         {
@@ -22,7 +23,7 @@ namespace Replacement
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=Replacement;Username=postgres;Password=333");
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=Replacement;Username=postgres;Password=123");
         }
 
         public static bool validData(Object args)

@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="HomeWindow" Height="450" Width="800">
     <Grid>
-        <Frame Source="Pages/TeacherPage.xaml"/>
+       
+
+        <TabControl>
+            <TabItem Header="Домашняя страница">
+                <Frame Source="Pages/TeacherPage.xaml"/>
+            </TabItem>
+            <TabItem Header="Заявка">
+                <Frame Source="Pages/AddRequestReplacePage.xaml"/>
+            </TabItem>
+        
+        </TabControl>
     </Grid>
 </Window>

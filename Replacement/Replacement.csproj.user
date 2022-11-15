@@ -13,6 +13,9 @@
     <Compile Update="HomeWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\AddRequestReplacePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\AuthorizationPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,6 +37,9 @@
     <Compile Update="Pages\UserPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ViewRequestsPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="AdminWindow.xaml">
@@ -43,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddRequestReplacePage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\AuthorizationPage.xaml">
@@ -64,6 +73,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\UserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ViewRequestsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

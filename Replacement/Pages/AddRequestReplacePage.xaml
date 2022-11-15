@@ -1,0 +1,19 @@
+﻿<Page x:Class="Replacement.Pages.AddRequestReplacePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Replacement.Pages"
+      mc:Ignorable="d" 
+      Background="White"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddRequestReplacePage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="txtRequest"/>
+        <Button Grid.Row="1" Content="Оставить заявку" Click="Button_Click_Add_Request" FontSize="24"/>
+    </Grid>
+</Page>

@@ -22,6 +22,9 @@
             <TabItem Header="Замены">
                 <Frame Source="Pages/ReplacementPage.xaml"/>
             </TabItem>
+            <TabItem Header="Заявки">
+                <Frame Source="Pages/ViewRequestsPage.xaml"/>
+            </TabItem>
         </TabControl>
     </Grid>
 </Window>
